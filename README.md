@@ -132,6 +132,8 @@ fig.suptitle("Hypothesis 1: Turbocharged vs Naturally Aspirated Engines")
 plt.tight_layout()
 plt.show()
 ```
+<img width="1090" height="789" alt="plot1" src="https://github.com/user-attachments/assets/c0bd5387-aa95-4579-8f32-90e6ba6b9ad4" />
+
 
 In the Hypothesis 1 Visualization, the boxplot comparison showed naturally aspirated engines with both higher median values and greater variability in fuel economy. Turbocharged vehicles clustered in a relatively normal distribution around 20-25 MPG, while naturally aspirated engines exhibited a pronounced bimodal distribution with concentrations in both high-efficiency (small engines achieving 35+ MPG) and low-efficiency ranges (large engines below 20 MPG). The scatter plot showed that turbocharged engines (red points) predominantly occupying the medium displacement range (2-3L) with moderate efficiency, while naturally aspirated engines (blue points) demonstrated both extremely efficient small engines and inefficient large engines, visually explaining why the overall mean comparison might be misleading.
 
@@ -230,6 +232,8 @@ fig.suptitle("Hypothesis 2: Premium vs Regular Fuel Vehicles")
 plt.tight_layout()
 plt.show()
 ```
+<img width="1090" height="789" alt="plot2" src="https://github.com/user-attachments/assets/e12c0f0d-133c-4d18-b560-ccdd0a17a1d9" />
+
 
 Hypothesis 2 Visualizations through the triple boxplot arrangement demonstrated consistent superiority of regular fuel vehicles across all three fuel economy measures. The nearly identical sample sizes (433 premium vs 435 regular) shown in the information panel strengthened the statistical validity of these comparisons. The consistent pattern across combined, city, and highway measures suggested a systematic difference rather than measurement artifact.
 
@@ -279,6 +283,8 @@ axes = pd.plotting.scatter_matrix(cor_vars, figsize=(9, 9), s=8, alpha=0.6, diag
 plt.suptitle("Scatterplot Matrix of Key Variables")
 plt.show()
 ```
+<img width="761" height="846" alt="plot3" src="https://github.com/user-attachments/assets/bb5a051c-e08e-4a34-af60-4b6c0b5906d4" />
+
 
 Correlation Matrix Visualization provided crucial validation of measurement consistency and revealed fundamental engineering relationships. The extremely high correlations between different fuel economy measures (r = 0.986 between combined and city MPG) confirmed internal consistency, while the clear negative relationship between engine displacement and all efficiency measures visually confirmed the fundamental physics of automotive efficiency.
 
@@ -339,6 +345,8 @@ ax.set(title="Average MPG by Displacement and Aspiration Type", ylabel="Combined
 plt.tight_layout()
 plt.show()
 ```
+<img width="990" height="590" alt="plot4" src="https://github.com/user-attachments/assets/dc857910-a662-4b7d-8846-b515990f9449" />
+
 
 Displacement Category Analysis through the bar plot showed a nuanced nature of the turbocharging effect. The visualization showed that the natural aspiration advantage was most dramatic in smaller engine categories (37.6 vs 26.7 MPG in <2L category) and diminished in larger categories, suggesting that turbocharging technology might be more beneficial for larger engines where the efficiency penalty is reduced.
 
@@ -431,6 +439,8 @@ fig.suptitle("Final Model Diagnostic Plots")
 plt.tight_layout()
 plt.show()
 ```
+<img width="1090" height="789" alt="plot5" src="https://github.com/user-attachments/assets/29a7b2d8-ccb1-4056-b556-c415662af1aa" />
+
 
 Model Diagnostic Plots provided essential validation of the regression assumptions. The relatively random scatter in the residuals vs fitted plot, the approximately linear pattern in the Q-Q plot, and the absence of extreme leverage points all supported the validity of the multivariate conclusions.
 
