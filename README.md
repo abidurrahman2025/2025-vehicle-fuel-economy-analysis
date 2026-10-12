@@ -3,11 +3,6 @@
 Requires: `pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`, `openpyxl` (Excel reader used by pandas).
 
 ```python
-# Uncomment if packages are missing
-# %pip install pandas numpy matplotlib scipy statsmodels openpyxl
-```
-
-```python
 import io
 import zipfile
 import urllib.request
